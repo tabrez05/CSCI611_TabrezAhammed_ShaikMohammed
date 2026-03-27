@@ -1,0 +1,27 @@
+Building the PDF report
+=========================
+
+From this `report/` directory:
+
+  cd report
+  pdflatex -interaction=nonstopmode Assignment3_Report.tex
+  pdflatex -interaction=nonstopmode Assignment3_Report.tex
+
+Figures are expected under:
+
+  report/figures/
+    fig-baseline-pretrained-mosaic.png
+    fig-finetuned-mosaic.png
+    fig-metrics-bar-compare.png
+
+Optional extra PNGs (notebook cell exports): cell12_out0.png, cell18_out0.png, cell20_out2.png
+
+Prerequisites: TeX Live / MacTeX / MiKTeX with pdflatex.
+
+Overleaf
+--------
+1. Upload **Assignment3_Report.tex** and the **figures/** folder (three main PNGs).
+2. Set `\graphicspath{{figures/}}` is already in the preamble.
+3. Ensure `\usepackage{xcolor}` appears **before** `\usepackage{hyperref}`.
+
+A compiled **Assignment3_Report.pdf** is included in the parent submission folder for convenience.
